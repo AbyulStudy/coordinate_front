@@ -9,7 +9,21 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body{
+        background: ${({ theme }: any) => theme.bg2};
+        color: ${({ theme }: any) => theme.text};
         font-family: 'Roboto', sans-serif;
         letter-spacing: .6px;
+    }
+
+    button{
+        font-family: inherit;
+        outline: none;
+        border: none;
+        background: none;
+        letter-spacing: inherit;
+        color: inherit;
+        font-size: inherit;
+        text-align: inherit;
+        padding: 0;
     }
 `;
