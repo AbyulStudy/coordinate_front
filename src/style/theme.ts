@@ -8,6 +8,7 @@ export const lightTheme = {
     textHover: "rgb(210,210,210)",
     primary: "rgb(52,131,235)",
     borderLine: "rgb(0,0,0)",
+    navMenuActive: "rgb(191, 191, 191)",
     searchBtn: "rgb(31, 31, 58)",
     searchText: "rgb(255,255,255)"
 };
@@ -17,10 +18,11 @@ export const darkTheme = {
     bg2: "rgb(30,30,30)",
     bg3: "rgb(50,50,50)",
     bg4: "rgb(70,70,70)",
-    text: "rgb(210,210,210)",
+    text: "rgb(255,255,255)",
     textHover: "rgb(35,35,35)",
     primary: "rgb(52,131,235)",
     borderLine: "rgb(255,255,255)",
+    navMenuActive: "rgb(150, 150, 150)",
     searchBtn: "rgb(255,255,255)",
     searchText: "rgb(0,0,0)"
 };

@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { IsActive } from "../../interface/type";
+import styled, { css } from "styled-components";
+import { IsActive, isSelect } from "../../interface/type";
 
 const SHeader = styled.header`
     position: fixed;
@@ -15,7 +15,7 @@ const SNav = styled.ul`
     gap: 1em;
 `;
 
-const SNavMenu = styled.li`
+const SNavMenu = styled.li<isSelect>`
     height: 3.25em;
     line-height: 3.25em;
     cursor: pointer;
@@ -25,6 +25,18 @@ const SNavMenu = styled.li`
         height: 3.5em;
         border-radius: 0 0 10px 10px;
     }
+
+    ${({ isSelect }) => {
+        return css`
+            :nth-child(${isSelect}) {
+                border-radius: 0 0 10px 10px;
+                background-color: ${({ theme }) => theme.navMenuActive};
+            }
+            :nth-child(${isSelect}):hover {
+                background-color: gray;
+            }
+        `;
+    }}
 `;
 
 const SNavTheme = styled.div`

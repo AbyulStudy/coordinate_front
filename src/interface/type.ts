@@ -5,3 +5,7 @@ export type Theme = {
 export type IsActive = Theme & {
     isActive: any;
 };
+
+export type isSelect = {
+    isSelect: number;
+};
