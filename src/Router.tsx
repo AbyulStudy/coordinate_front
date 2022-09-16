@@ -7,7 +7,7 @@ const Router = () => {
     return (
         <Suspense fallback={<Spinner />}>
             <Routes>
-                <Route path="/" element={<Layout />}></Route>
+                <Route path="*" element={<Layout />}></Route>
             </Routes>
         </Suspense>
     );
