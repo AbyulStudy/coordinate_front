@@ -6,6 +6,7 @@ export const GlobalStyle = createGlobalStyle`
         padding: 0;
         list-style: none;
         box-sizing: border-box;
+        line-height: 1.5em;
     }
 
     body{
