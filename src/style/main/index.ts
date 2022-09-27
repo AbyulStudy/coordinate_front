@@ -7,6 +7,7 @@ const SMain = styled.main`
     gap: 0.5em;
     width: 100%;
     max-width: 1180px;
+    margin: 0 auto;
     margin-top: 3.25em;
 `;
 
@@ -16,7 +17,7 @@ const SWrap = styled.div`
     margin: 1em auto 0 auto;
     gap: 1em;
     width: 100%;
-    max-width: 980px;
+    max-width: 1080px;
     min-width: auto;
 `;
 
