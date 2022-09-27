@@ -9,14 +9,14 @@ class AxiosInstance {
     static createNodeInstance() {
         return axios.create({
             baseURL: this.nodeURL,
-            timeout: AxiosInstance.TIME_OUT
+            timeout: this.TIME_OUT
         });
     }
 
     static createJavaInstance() {
         return axios.create({
             baseURL: this.javaURL,
-            timeout: AxiosInstance.TIME_OUT
+            timeout: this.TIME_OUT
         });
     }
 }
